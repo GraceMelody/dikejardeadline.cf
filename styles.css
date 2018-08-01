@@ -1,0 +1,38 @@
+@font-face {
+    font-family: bold;
+    src: url(fonts/NeueBold.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(fonts/NeueLight.ttf);
+}
+@font-face {
+    font-family: tryst;
+    src: url(fonts/Tryst-Regular.otf);
+}
+
+body{
+	background-color:#304FFE;
+	color:#F8BBD0;
+}
+
+h5{
+	font-size:3em;
+	text-align: center;
+}
+
+h1{
+	font-size:5em;
+}
+h1{
+	font-family:bold;
+	text-align: center;
+}
+h3{
+	font-family:bold;
+	text-align: center;
+}
+h4{
+	font-family:light;
+	text-align:center;
+}

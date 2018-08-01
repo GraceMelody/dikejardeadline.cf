@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Comifuro XI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		
+		<script>
+					// Set the date we're counting down to
+			var countDownDate = new Date("August 18, 2018 09:30:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+				// Get todays date and time
+				var now = new Date().getTime();
+				
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
+				
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				
+				// Output the result in an element with id="demo"
+				document.getElementById("demo").innerHTML = days + " hari, " + hours + " jam, "
+				+ minutes + " menit, dan " + seconds + " detik lagi.";
+				
+				// If the count down is over, write some text 
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "EXPIRED";
+				}
+			}, 1000);
+		</script>
+		<h5>Comic Frontier 11 akan diadakan dalam...</h5>
+		<h1 id="demo"></h1>
+		<div class="col-xs-offset-2 col-xs-8">
+			
+			
+			<h3>Countdown ini hanyalah reminder untuk kalian yang harus siap-siapin artwork/jualan :)</h3>
+			<h4>...atau mungkin buat kalian yang super excited buat CF!</h4>
+		</div>
+	</div>
+</body>
+</html>
