@@ -10,30 +10,37 @@
     font-family: tryst;
     src: url(fonts/Tryst-Regular.otf);
 }
+@font-face {
+    font-family: anita;
+    src: url(fonts/AnitaBold.ttf);
+}
 
 body{
 	margin-top: 10em;
 	background-color:#00ACC1;
 	color:#ffffee;
 }
-
+.o{
+	color:#f44336;
+}
 h5{
 	font-size:3em;
 	text-align: center;
+	font-family:anita;
 }
 
 h1{
 	font-size:5em;
 }
 h1{
-	font-family:bold;
+	font-family:anita;
 	text-align: center;
 }
 h3{
-	font-family:bold;
+	font-family:anita;
 	text-align: center;
 }
 h4{
-	font-family:light;
+	font-family:anita;
 	text-align:center;
 }
